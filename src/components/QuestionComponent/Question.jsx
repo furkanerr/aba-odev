@@ -328,7 +328,7 @@ function generateOrmanTedbirPdf(ormanİlaveTedbirleri){
        ormanİlaveTedbirleri.length =0
       setCurrent('adim1');
       setAdim(adims[0]);
-      alert("PDF oluşturuldu");
+      alert("PDFler oluşturuldu");
       setIsOpen(false)
     }
   };
