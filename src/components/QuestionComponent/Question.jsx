@@ -258,7 +258,7 @@ function generateOrmanTedbirPdf(ormanİlaveTedbirleri){
     adim26: [adim27, adim27],
     adim27: [adim29, adim28],
     adim28: [adim29, adim29],
-    adim29: [adim31, adim28],
+    adim29: [adim31, adim30],
     adim30: [adim31, adim31],
     adim31: [adim33, adim32],
     adim32: [adim33, adim33],
