@@ -69,6 +69,7 @@
     border-top: 1px solid black;
     margin-top: 50px;
 }
+
 .yapilacaklar{
     border-left: 1px solid;
     border-right: 1px solid;
@@ -157,4 +158,10 @@ transform: scale(1.1);
     justify-content: center;
     color : white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media only screen and (max-width: 625px){
+	.docs{
+        flex-direction: column;
+    }
 }
