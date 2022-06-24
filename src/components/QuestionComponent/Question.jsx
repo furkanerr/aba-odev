@@ -320,7 +320,11 @@ function generateOrmanTedbirPdf(ormanİlaveTedbirleri){
     }
     else{
       if(hazirlanacak.length > 0){ generateHazirlanacaklarPdf(hazirlanacak);}
-      if(yapilacaklar.length > 0){ generateYapilacaklarPdf(yapilacaklar);}
+      if(yapilacaklar.length > 0){ 
+        //remove duplicate values
+        let unique = [...new Set(yapilacaklar)];
+        generateYapilacaklarPdf(unique);
+      }
       if(ormanİlaveTedbirleri.length > 0){generateOrmanTedbirPdf(ormanİlaveTedbirleri);}
 
        hazirlanacak.length =0

@@ -238,7 +238,8 @@ let adim71={
     eğitim belgelerinin hazırlanması gereli. `
 }
 function documentMethod(adim,answer) {
-   
+    let unique = [...new Set(yapilacaklar)];
+    yapilacaklar = unique;
  if(adim === 'adim1' && answer === 'Evet'){
    hazirlanacak= [...hazirlanacak,adim1.hazırlanacklar]
    yapilacaklar=  [...yapilacaklar,adim1.yapılacaklar]
