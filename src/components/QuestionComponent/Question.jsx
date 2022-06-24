@@ -312,7 +312,7 @@ function generateOrmanTedbirPdf(ormanİlaveTedbirleri){
 
     let selected = graph[current][number] ?? "boş";
     let temp = adims.indexOf(selected) + 1;
-    console.log(temp);
+
     documentMethod(current, e.target.innerText);
 
     setCurrent(`adim${temp}`);
@@ -323,6 +323,7 @@ function generateOrmanTedbirPdf(ormanİlaveTedbirleri){
       if(yapilacaklar.length > 0){ 
         //remove duplicate values
         let unique = [...new Set(yapilacaklar)];
+        console.log(unique);
         generateYapilacaklarPdf(unique);
       }
       if(ormanİlaveTedbirleri.length > 0){generateOrmanTedbirPdf(ormanİlaveTedbirleri);}
@@ -339,7 +340,8 @@ function generateOrmanTedbirPdf(ormanİlaveTedbirleri){
 
   return (
     <div className={styles.container}>
-      <h2>Yönetmeliğin 1. ve 2.Kısmı</h2>
+      <div className={styles.header}> <h2>Yönetmeliğin 1. ve 2.Kısmı</h2></div>
+     
       {
         IsOpen===false ? ( <div onClick={()=>{setIsOpen(!IsOpen)}} className={styles.startButton}>
           <div className={styles.start}>Belge Oluşturmaya Başla</div>
