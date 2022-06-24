@@ -124,11 +124,16 @@ transform: scale(1.1);
     justify-content: center;
     margin: 150px;
     height: 80px;
+    background-color: #ffe1e17a;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    
 }
 .start{
-    height: 80px;
-    width: 280px;
-    background-color: #61dafb;
+  
+    width: auto;
+    height: 50px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -136,9 +141,10 @@ transform: scale(1.1);
     transition: all 0.3s;
     cursor: pointer;
     font-size: 25px;
+    background-color: #f1a4a4;
 }
 .start:hover{
-    background-color: #61dafb;
+    background-color: #c0bd9c;
     color: white;
     transform: scale(1.1);
 }

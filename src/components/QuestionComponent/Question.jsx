@@ -228,6 +228,8 @@ function generateOrmanTedbirPdf(ormanİlaveTedbirleri){
     (adim70 = "binanın yapı yüksekliği 30,50 m den fazla mı?"), //evet ise yapılacaklar listesine ekle
     (adim71 = "işyerinde çalışan sayısı 50 kişiden fazla mı?"), //evet ise yapılacaklar listesine ekle
   ];
+
+  //graph data structure
   let graph = {
     adim1: [adim2, adim2],
     adim2: [adim3, adim3],
@@ -326,7 +328,8 @@ function generateOrmanTedbirPdf(ormanİlaveTedbirleri){
        ormanİlaveTedbirleri.length =0
       setCurrent('adim1');
       setAdim(adims[0]);
-      
+      alert("PDF oluşturuldu");
+      setIsOpen(false)
     }
   };
 
